@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <title>Document</title>
+</head>
+<body style="background-color: antiquewhite;">
+    <center><h1>Register</h1>
+    <ul>
+        <% if(typeof errors !='undefined'){%>
+            <%errors.forEach(error=>{%>
+                <li><%=error.message%></li>
+            <%})%>
+            
+        <%}%>
+    </ul>
+    <form action="/user/register" method="post">
+        <div>
+            <input type="text" id="name" name="name" placeholder="Name" required/>
+        </div>
+        <div>
+            <input type="email" id="email" name="email" placeholder="email" required/>
+        </div>
+        <div>
+            <input type="password" id="password" name="password" placeholder="password" required/>
+        </div>
+        <div>
+            <input type="password" id="password2" name="password2" placeholder="Confirm password" required/>
+        </div>
+        <div>
+            <input type="submit" value="Register"/>
+        </div>
+        <a href="/user/login">Already registered ??🙂 Login</a>
+    </form>
+</center>
+</body>
+</html>

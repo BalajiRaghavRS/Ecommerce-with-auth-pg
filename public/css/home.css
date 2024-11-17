@@ -1,0 +1,127 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #e7e9f0; 
+}
+header {
+    background-color: #333;
+    padding: 1em 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: white;
+}
+
+.brand {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ff6b6b;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+.product-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-links a:hover {
+    color: #ff6b6b;
+}
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1.5fr));
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr;
+}
+
+.product {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 10px;
+}
+
+.price {
+    font-size: 1.1em;
+    color: #ff6b6b;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.price:hover {
+    color: #ff4c4c;
+}
+.loginbutt {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #ff6b6b;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.loginbutt:hover {
+    background-color: #ff4c4c;
+    transform: scale(1.05);
+}
+
+.loginbutt:active {
+    transform: scale(0.95);
+}
