@@ -1,4 +1,4 @@
-Kindly install NODE 
+Kindly install NODE AND PACKAGE MODULES
 
 And start by npm init -y command on terminal
 
